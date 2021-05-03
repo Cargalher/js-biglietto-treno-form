@@ -1,4 +1,4 @@
-/* main rules */
+/* main  */
 *{
     box-sizing: border-box;
     margin :0;
@@ -20,6 +20,7 @@
 .bg_gray{
     background-color: gray;
 }
+
 /* common */
 .block1, .block2{
 background-color: white;
@@ -28,7 +29,7 @@ width: 650px;
 margin: auto;
 }
 
-/* top */
+/* top form*/
 h1{
     color: white;
     text-align: center;
@@ -53,7 +54,7 @@ border: 1px solid #B91450;
 color:  #B91450;
 }
 
-/* bottom */
+/* bottom form*/
 h2{
     font-size: 15px;
     text-align: left;
