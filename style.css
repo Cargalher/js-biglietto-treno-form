@@ -20,6 +20,12 @@
 .d_flex{
     display: flex;
 }
+.justify_center{
+    justify-content: center;
+}
+.column{
+    flex-direction: column;
+}
 h1{
     color: white;
     text-align: center;
