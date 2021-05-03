@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin :0;
+    padding: 0;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container{
+    width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+    background-color: #B91450;
+    padding-bottom: 30px;
+}
+/* utilities */
+.d_flex{
+    display: flex;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+.block1, .block2{
+background-color: white;
+width: 800px;
+height: 200px;
+margin: auto;
+}
+.block1{
+    border-radius: 10px;
+}
