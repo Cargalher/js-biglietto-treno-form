@@ -20,36 +20,28 @@
                 
                 <div class="d-flex justify-content-center">
                    <div class="cust_name">
-                        <span>Nome Cognome</span>
-                        <input class="mt-3 brd_pink" type="text" name="" id="fullName">
+                        <label for="fullName">Nome Cognome</label>   
+                        <input class="mt-3 brd_pink rounded" type="text" name="fullName" id="fullName">
                     </div>
                     <div class="km">
-                        <span>Km da percorrere</span>
-                        <input class="mt-3 brd_pink" type="text" name="" id="distance">
+                        <label for="distance">Km da percorrere</label>
+                        <input class="mt-3 brd_pink rounded" type="number" name="distance" id="distance">
                     </div>
-                    
-                    <!-- <div class="age">
-                        <span>Fascia d'età</span>
-                        <input class="mt-3 brd_pink" type="text" name="" id="">
-                    </div>  -->
-                    <form class="age" action="/action_page.php">
-                        <span>Fascia d'età</span>
-                      
-                        <select class="mt-3 brd_pink" name="option">
-                          <option value="1">Less than 18</option>
-                          <option value="2">Between 18-65</option>
-                          <option value="3">More than 65</option>
+            
+                    <div class="age">
+                        <label for="age_group">Fascia d'età</label>
+                        <select class="mt-3 brd_pink rounded" name="age_group" id="age_group">
+                          <option value="minor" id="minor">Less than 18</option>
+                          <option value="adult" id="adult">Between 18-65</option>
+                          <option value="senior" id="senior">More than 65</option>
                         </select>
-                    </form>
+                    </div>
                 </div>
 
-                <div class="d-flex justify-content-center">
-                   
+                <div class="d-flex justify-content-center">  
                     <div class="d_flex justify_center">
-                        <button id="btn1" class="mt-3 mr-3 ml-3  brd_pink bg_lggray">Genera</button>
-                        <button id="btn2" class="mt-3 mr-3 ml-3  brd_pink bg_lggray">Annulla</button>
-                        <!-- <input id="" class="mt-3 mr-3 ml-3  brd_pink bg_lggray" type="button" value="Genera">
-                        <input id="" class="mt-3 mr-3 ml-3 brd_pink bg_lggray" type="button" value="Annulla"> -->
+                        <button class="mt-3 mr-3 ml-3  brd_pink bg_lggray rounded font-weight-bold pl-1 pr-1" id="createTicket" >Genera</button>
+                        <button class="mt-3 mr-3 ml-3  brd_pink bg_lggray rounded font-weight-bold pl-1 pr-1" id="clearTicket" >Annulla</button>
                     </div>
                 </div>
             </div>
@@ -58,32 +50,32 @@
 
 
         <!-- bottom form -->
-        <h1 class="mt-4">il tuo biglietto</h1>
+        <h1 class="mt-4" id="mt-4">il tuo biglietto</h1>
         <!-- second white block -->
-        <div class="block2">
+        <div class="ticket block2">
             <h2 class="pt-1 text-uppercase"> Dettaglio Passaggeri</h2>
 
             <div class=" gray_border d-flex justify-content-between">
 
                 <div class="gray_box text-left bg_gray text-uppercase font-weight-bold d-flex flex-column justify-content-around">
                     <div>Nome Passeggero:</div>
-                    <span id="client_name">Pippo</span>
+                    <span id="client_name"></span>
                 </div>
                 <div class="d-flex flex-column justify-content-around">
                     <span class="font-weight-bold ">Offerta:</span>
-                    <span>Sconto</span>
+                    <span id="discount"></span>
                 </div>
                 <div class="d-flex flex-column justify-content-around">
-                    <span class="font-weight-bold ">Carrozza:</span>
-                    <span>7</span>
+                    <span class="font-weight-bold " id="carriage">Carrozza:</span>
+                    <span id="carriageNumber"></span>
                 </div>
                 <div class="d-flex flex-column justify-content-around">
                     <span class="font-weight-bold ">Codice <br>CP: </span>
-                    <span>97928</span>
+                    <span id="code"></span>
                 </div>
                 <div class="d-flex flex-column justify-content-around">
                     <span class="font-weight-bold ">Costo <br> Biglietto:</span>
-                    <span>3.36 $</span>
+                    <span id="ticketPrice"></span>
                 </div>
             </div>
         </div>

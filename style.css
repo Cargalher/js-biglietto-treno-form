@@ -42,7 +42,7 @@ h1{
 .block1{
     border-radius: 10px;
     height: 140px;
-    box-shadow:  1px 2px 12px #030000;
+    box-shadow: 0px 0px 16px 0px #030000;
 }
 .cust_name, .km, .age{
     color:  #B91450;
@@ -79,7 +79,7 @@ h2{
 }
 .block2{
     height: 200px;
-    box-shadow:  1px 2px 12px #030000;
+    box-shadow: 0px 0px 16px 0px #030000;
 }
 
 .gray_border{
